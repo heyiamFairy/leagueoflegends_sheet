@@ -41,6 +41,8 @@ a {
   width: 1054px;
   height: 635px;
   margin: 0 auto;
+
+  position:relative;
   
   display: flex;
   position: relative;
