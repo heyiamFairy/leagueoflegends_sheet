@@ -203,6 +203,18 @@
               </linearGradient>
             </defs>
           </svg> <!-- 5 저장 -->
+          <script>
+            // 'PNG로 저장' 버튼 클릭 시 실행되는 함수
+            document.getElementById("save-button").addEventListener("click", function () {
+              // container 요소를 캡처하여 canvas 생성
+              html2canvas(document.getElementById("container")).then(function (canvas) {
+                // canvas를 Blob 객체로 변환하여 저장
+                canvas.toBlob(function (blob) {
+                  saveAs(blob, "leagueoflegends_sheet_image.png"); // 파일 다운로드
+                });
+              });
+            });
+          </script>
           <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
             <circle cx="23" cy="23" r="23" fill="url(#paint0_linear_14_23)"/>
             <circle cx="23" cy="23" r="21" fill="url(#paint1_linear_14_23)"/>
