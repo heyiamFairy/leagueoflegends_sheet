@@ -1,0 +1,1016 @@
+body {
+  font-family: 'Pretendard', sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+
+a {
+  color: inherit; /* 보유 색상으로 지정 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.write {
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none;
+}
+
+.highlightable { /* 형광펜 칠할거 */
+  cursor: pointer;
+  padding: 0 3px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.highlighted { /* 형광펜 색상 */
+  background-color: rgba(205, 190, 145, 0.50); /* 기본 색상 */
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  width: 1054px;
+  height: 635px;
+  margin: 0 auto;
+  
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  top: 140px;
+}
+
+#back svg {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+}
+
+aside {
+  width: 196px;
+
+  position: absolute;
+  top: 0px;
+  left: 34px;
+  right: 828px;
+  bottom: 0px;
+}
+
+aside svg:nth-of-type(1) {
+  width: 196px;
+  height: 512px;
+  
+  position: absolute;
+  top: -15.5px;
+  left: 0px;
+
+  fill: #0A0E12;
+  stroke-width: 1px;
+  stroke: #1E1E26;
+}
+
+aside svg:nth-of-type(2) {
+  width: 196px;
+  height: 512px;
+
+  position: absolute;
+  top: -1px;
+  left: 0px;
+
+  fill: radial-gradient(45.51% 111.79% at 50.26% 40.82%, #212A30 0%, #0A0E12 100%);
+}
+
+aside svg:nth-of-type(3) {
+  width: 196px;
+  height: 512px;
+
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  fill: linear-gradient(180deg, #232C33 68.75%, rgba(35, 44, 51, 0.00) 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+aside h1 {
+  color: #D7CFBE;
+  font-size: 12px;
+  letter-spacing: 1.44px;
+
+  position: absolute;
+  top: 55px;
+  left: 74px;
+}
+
+aside li {
+  list-style-type: none;
+  font-size: 10px;
+  color: #DAD1BF;
+  letter-spacing: 0.7px;
+}
+
+aside .agelimit {
+  position: absolute;
+  top: 88px;
+}
+
+aside #agelimit1 {
+  left: 29px;
+}
+
+aside #agelimit2 {
+  left: 82px;
+}
+
+aside #agelimit3 {
+  left: 86px;
+}
+
+aside #agelimit4 {
+  left: 120px;
+}
+
+aside #agelimit5 {
+  left: 124px;
+}
+
+aside .trace {
+  position: absolute;
+  top: 101px;
+}
+
+aside #trace1 {
+  left: 41px;
+}
+
+aside #trace2 {
+  left: 61px;
+}
+
+aside #trace3 {
+  left: 65px;
+}
+
+aside #trace4 {
+  left: 90px;
+}
+
+aside #trace5 {
+  left: 94px;
+}
+
+aside #trace6 {
+  left: 128px;
+}
+
+aside #trace7 {
+  left: 132px;
+}
+
+aside .find {
+  position: absolute;
+  top: 115px;
+}
+
+aside #find1 {
+  left: 47px;
+}
+
+aside #find2 {
+  left: 81px;
+}
+
+aside #find3 {
+  left: 85px;
+}
+
+aside svg:nth-of-type(4) {
+  position: absolute;
+  top: 161px;
+  left: 57px;
+}
+
+#nickname {
+  width: 175px;
+
+  color: #DAD1BF;
+  font-size: 17px;
+  text-align: center;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 280px;
+  left: 10px;
+}
+
+aside h2 {
+  color: #A09B8C;
+  font-size: 16px;
+  letter-spacing: -0.96px;
+
+  position: absolute;
+  top: 300px;
+  left: 97px;
+}
+
+aside #changingAge {
+  height: 20px;
+
+  color: #A09B8C;
+  font-size: 16px;
+  letter-spacing: -0.96px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 297px;
+  left: 65px;
+}
+
+aside #changingGender {
+  height: 20px;
+
+  color: #A09B8C;
+  font-size: 16px;
+  letter-spacing: -0.96px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 297px;
+  left: 107px;
+}
+
+aside svg:nth-of-type(5) {
+  cursor: pointer;
+
+  position: absolute;
+  top: 348px;
+  left: 26px;
+}
+
+aside svg:nth-of-type(6) {
+  cursor: pointer;
+
+  position: absolute;
+  top: 348px;
+  left: 76px;
+}
+
+aside svg:nth-of-type(7) {
+  cursor: pointer;
+
+  position: absolute;
+  top: 348px;
+  left: 126px;
+}
+
+aside svg:nth-of-type(8) {
+  position: absolute;
+  left: 53.46px;
+  bottom: 68px;
+}
+
+aside svg:nth-of-type(9) {
+  position: absolute;
+  left: 89.11px;
+  bottom: 71px; 
+}
+
+aside svg:nth-of-type(10) {
+  position: absolute;
+  left: 126.71px;
+  bottom: 67.52px;
+}
+
+#number0 {
+  color: #DAD1BF;
+  font-size: 12px;
+
+  position: absolute;
+  left: 58.45px;
+  bottom: 38px;
+}
+
+#number2 {
+  color: #DAD1BF;
+  font-size: 12px;
+
+  position: absolute;
+  left: 131.45px;
+  bottom: 38px;
+}
+
+#TopMunu li{
+  list-style-type: none;
+  font-size: 12px;
+
+  position: absolute;
+  top: 9px;
+}
+
+header li:nth-of-type(1) {
+  color: #DAD1BF;
+  letter-spacing: 1.44px;
+  left: 49px;
+}
+
+header li:nth-of-type(2) {
+  color: #CDBE91;
+  letter-spacing: 1.8px;
+  left: 103px;
+}
+
+header li:nth-of-type(3) {
+  color: #CDBE91;
+  letter-spacing: 1.56px;
+  left: 181px;
+}
+
+header li:nth-of-type(4) {
+  color: #CDBE91;
+  letter-spacing: 1.44px;
+  left: 264px;
+}
+
+header li:nth-of-type(5) {
+  color: #CDBE91;
+  letter-spacing: 1.44px;
+  left: 318px;
+}
+
+header li:nth-of-type(6) {
+  color: #CDBE91;
+  letter-spacing: 1.44px;
+  left: 408px;
+}
+
+header svg:nth-of-type(1) {
+  position: absolute;
+  top: 26px;
+  left: 35px;
+}
+
+header div {
+  width: 201px;
+  height: 30px;
+
+  position: absolute;
+  top: 13px;
+  right: 70px;
+
+  border: 1px solid #785A28;
+  background: rgba(0, 0, 0, 0.80);
+}
+
+header svg:nth-of-type(2) {
+  width: 9.707px;
+  height: 10px;
+
+  position: absolute;
+  top: 23px;
+  right: 252.29px;
+}
+
+header p {
+  color: #938D80;
+  font-size: 13px;
+
+  position: absolute;
+  top: 7px;
+  right: 145px;
+}
+
+header label {
+  width: 28px;
+  height: 28px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: -12px;
+  right: 70px;
+}
+
+header .discord { 
+  cursor: pointer;
+
+  position: absolute;
+  top: 57px;
+  right: 73px;
+}
+
+header img {
+  width: 28px;
+  height: 28px;
+
+  position: absolute;
+  top: 50px;
+  right: 35px;
+}
+
+main {
+  height: 319px;
+}
+
+svg:nth-of-type(1) {
+  position: absolute;
+  top: 107px;
+  right: 9px;
+}
+
+svg:nth-of-type(2) {
+  position: absolute;
+  top: 109px;
+  right: 10.91px;
+}
+
+main img {
+  width: 40px;
+  height: 40px;
+}
+
+#mode img:nth-of-type(1) {
+  position: absolute;
+  top: 127px;
+  left: 280px;
+}
+
+#mode img:nth-of-type(2) {
+  position: absolute;
+  top: 178px;
+  left: 280px;
+}
+
+#mode img:nth-of-type(3) {
+  position: absolute;
+  top: 229px;
+  left: 280px;
+}
+
+#mode img:nth-of-type(4) {
+  position: absolute;
+  top: 280px;
+  left: 280px;
+}
+
+#mode img:nth-of-type(5) {
+  position: absolute;
+  top: 331px;
+  left: 280px;
+}
+
+main li {
+  letter-spacing: 0.84px;
+  list-style-type: none;
+  font-size: 12px;
+  color: #DAD1BF;
+}
+
+main .SummonersRift {
+  position: absolute;
+  top: 140px;
+}
+
+main #SummonersRift1 {
+  left: 338px;
+}
+
+main #SummonersRift2 {
+  left: 362px;
+}
+
+main #SummonersRift3 {
+  left: 396px;
+}
+
+main #SummonersRift4 {
+  left: 477px;
+}
+
+main #SummonersRift5 {
+  left: 533px;
+}
+
+main .HowlingAbyss {
+  position: absolute;
+  top: 191px;
+}
+
+main #HowlingAbyss1 {
+  left: 338px;
+}
+
+main #HowlingAbyss2 {
+  left: 421px;
+}
+
+main .TeamfightTactics {
+  position: absolute;
+  top: 242px;
+}
+
+main #TeamfightTactics1 {
+  left: 338px;
+}
+
+main #TeamfightTactics2 {
+  left: 373px;
+}
+
+main #TeamfightTactics3 {
+  left: 406px;
+}
+
+main #TeamfightTactics4 {
+  left: 477px;
+}
+
+main #TeamfightTactics5 {
+  left: 549px;
+}
+
+main .Clash {
+  position: absolute;
+  top: 294px;
+  left: 338px;
+}
+
+main .etc {
+
+  position: absolute;
+  top: 344px;
+  left: 338px;
+}
+
+main p:nth-of-type(1) {
+  position: absolute;
+  top: 127px;
+  left: 334px;
+}
+
+main p:nth-of-type(2) {
+  position: absolute;
+  top: 178px;
+  left: 334px;
+}
+
+main p:nth-of-type(3) {
+  position: absolute;
+  top: 229px;
+  left: 334px;
+}
+
+main p:nth-of-type(4) {
+  position: absolute;
+  top: 280px;
+  left: 334px;
+}
+
+main p:nth-of-type(5) {
+  position: absolute;
+  top: 331px;
+  left: 334px;
+}
+
+#line img:nth-of-type(1) {
+  position: absolute;
+  top: 127px;
+  left: 683px;
+}
+
+#line img:nth-of-type(2) {
+  position: absolute;
+  top: 178px;
+  left: 683px;
+}
+
+#line img:nth-of-type(3) {
+  position: absolute;
+  top: 229px;
+  left: 683px;
+}
+
+#line img:nth-of-type(4) {
+  position: absolute;
+  top: 280px;
+  left: 683px;
+}
+
+#line img:nth-of-type(5) {
+  position: absolute;
+  top: 331px;
+  left: 683px;
+}
+
+main #top {
+  width: 269px;
+  color: #DAD1BF;
+
+  font-size: 12px;
+  letter-spacing: 0.84px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 140px;
+  left: 744px;
+}
+
+main #jg {
+  width: 269px;
+  color: #DAD1BF;
+
+  font-size: 12px;
+  letter-spacing: 0.84px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 191px;
+  left: 744px;
+}
+
+main #mid {
+  width: 269px;
+  color: #DAD1BF;
+
+  font-size: 12px;
+  letter-spacing: 0.84px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 242px;
+  left: 744px;
+}
+
+main #ad {
+  width: 269px;
+  color: #DAD1BF;
+
+  font-size: 12px;
+  letter-spacing: 0.84px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 293px;
+  left: 744px;
+}
+
+main #sup {
+  width: 269px;
+    color: #DAD1BF;
+
+  font-size: 12px;
+  letter-spacing: 0.84px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 344px;
+  left: 744px;
+}
+
+footer {
+  height: 228px;
+}
+
+#rank_box label {
+  font-family: Pretendard;
+  color: #CDBE91;
+  font-size: 12px;
+
+  position: absolute;
+  bottom: 214px;
+
+  letter-spacing: 1.8px;
+  left: 340px;
+}
+
+#rank {
+  font-family: Pretendard;
+  color: #DAD1BF;
+  font-size: 10px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 198px;
+
+  letter-spacing: 1.1px;
+  left: 340px;
+
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none;
+  appearance: none; /* 아래 화살표 제거 */
+  cursor: pointer;
+}
+
+#rank_box svg {
+  position: absolute;
+  top: 449px;
+  left: 362px;
+}
+
+#rank_box img {
+  width: 130px;
+  height: 130px;
+
+  display: none;
+
+  position: absolute;
+  left: 306px;
+  bottom: 41px;
+}
+
+#rank_box img:nth-of-type(1) {
+  bottom: 35px;
+}
+
+
+#position_box label {
+  font-family: Pretendard;
+  color: #CDBE91;
+  font-size: 12px;
+
+  position: absolute;
+  bottom: 214px;
+
+  letter-spacing: 1.8px;
+  left: 497px;
+}
+
+#position {
+  font-family: Pretendard;
+  color: #DAD1BF;
+  font-size: 10px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 198px;
+
+  letter-spacing: 1.1px;
+  left: 496px;
+
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none;
+  appearance: none; /* 아래 화살표 제거 */
+  cursor: pointer;
+}
+
+#position_box img {
+  width: 96px;
+  height: 96px;
+
+  display: none;
+
+  position: absolute;
+  left: 467px;
+  bottom: 58px;
+}
+
+#most_box label {
+  font-family: Pretendard;
+  color: #CDBE91;
+  font-size: 12px;
+
+  position: absolute;
+  bottom: 214px;
+
+  letter-spacing: 1.44px;
+  left: 634px;
+}
+
+#most {
+  font-family: Pretendard;
+  color: #DAD1BF;
+  font-size: 26px;
+  text-align: center;
+  width: 100px;
+
+  position: absolute;
+  bottom: 165px;
+
+  letter-spacing: -0.26px;
+  left: 608px;
+
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none; /* 아래 화살표 제거 */
+  cursor: pointer;
+}
+
+#most_box svg:nth-of-type(1) {
+  position: absolute;
+  top: 408px;
+  right: 324px;
+}
+
+#most_box svg:nth-of-type(2) {
+  position: absolute;
+  top: 529.47px;
+  left: 631px;
+}
+
+#most_box svg:nth-of-type(3) {
+  position: absolute;
+  top: 479px;
+  left: 626px;
+}
+
+#most_box img {
+  width: 46px;
+  height: 40.969px;
+
+  position: absolute;
+  left: 636px;
+  bottom: 56.81px;
+}
+
+#champion {
+  font-family: Pretendard;
+  color: #DAD1BF;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 1.2px;
+
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none;
+  appearance: none; /* 아래 화살표 제거 */
+  cursor: pointer;
+
+  position: absolute;
+  left: 618px;
+  bottom: 198px;
+}
+
+#champion_image img {
+  width: 63px;
+  height: 63px;
+
+  border: none;
+
+  position: absolute;
+  left: 627.2px;
+  bottom: 92.3px;
+}
+
+#team_box label {
+  font-family: Pretendard;
+  color: #CDBE91;
+  font-size: 12px;
+
+  position: absolute;
+  bottom: 214px;
+
+  letter-spacing: 0.96px;
+  left: 784px;
+}
+
+#team {
+  font-family: Pretendard;
+  color: #DAD1BF;
+  font-size: 10px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 198px;
+
+  letter-spacing: 1.2px;
+  left: 743px;
+
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none;
+  appearance: none; /* 아래 화살표 제거 */
+  cursor: pointer;
+}
+
+#team_box img:nth-of-type(2) {
+  width: 65px;
+
+  display: none;
+
+  position: absolute;
+  left: 770px;
+  bottom: 74px;
+}
+
+#team_box img:nth-of-type(3) {
+  width: 65px;
+
+  display: none;
+
+  position: absolute;
+  left: 770px;
+  bottom: 78.68px;
+}
+
+#team_box img:nth-of-type(4) {
+  width: 65px;
+
+  display: none;
+
+  position: absolute;
+  left: 770px;
+  bottom: 72.47px;
+}
+
+#team_box img:nth-of-type(5) {
+  width: 65px;
+
+  display: none;
+
+  position: absolute;
+  left: 770px;
+  bottom: 74px;
+}
+
+#team_box img:nth-of-type(6) {
+  width: 65px;
+
+  display: none;
+
+  position: absolute;
+  left: 770px;
+  bottom: 62.59px;
+}
+
+#team_box img:nth-of-type(7) {
+  width: 65px;
+
+  display: none;
+
+  position: absolute;
+  left: 770px;
+  bottom: 87.86px;
+}
+
+#region_box label {
+  font-family: Pretendard;
+  color: #CDBE91;
+  font-size: 12px;
+
+  position: absolute;
+  bottom: 214px;
+
+  letter-spacing: 1.32px;
+  left: 935px;
+}
+
+#region {
+  font-family: Pretendard;
+  color: #DAD1BF;
+  font-size: 10px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 198px;
+
+  letter-spacing: 1.2px;
+  left: 923px;
+
+  border: none;
+  outline: none; /* 선택 시 발생하는 외곽선 제거 */
+  background: none;
+  appearance: none; /* 아래 화살표 제거 */
+  cursor: pointer;
+}
+
+#region_box img {
+  width: 80.023px;
+  height: 82.605px;
+
+  display: none;
+
+  position: absolute;
+  left: 907px;
+  bottom: 64.4px;
+}
+
+.profile {
+  width: 75.5px;
+  height: 75.5px;
+  background-color: #fff;
+  border-radius: 75.5px;
+
+  position: absolute;
+  top: 164.2px;
+  left: 94.1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
