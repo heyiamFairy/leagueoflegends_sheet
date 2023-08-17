@@ -215,7 +215,7 @@
               });
             });
           </script>
-          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+          <svg id="homeButton" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
             <circle cx="23" cy="23" r="23" fill="url(#paint0_linear_14_23)"/>
             <circle cx="23" cy="23" r="21" fill="url(#paint1_linear_14_23)"/>
             <circle cx="23" cy="23" r="19" fill="#2D8049"/>
@@ -238,6 +238,16 @@
               </linearGradient>
             </defs>
           </svg> <!-- 6 리셋 -->
+          <script>
+            // Home 버튼을 클릭하면 홈 페이지로 돌아가는 함수를 정의합니다.
+            function goToHome() {
+              window.location.href = "http://127.0.0.1:5500/%EB%A1%A4%20%ED%8A%B8%EC%B9%9C%EC%86%8C%20%EC%8B%9C%ED%8A%B8/%EB%A1%A4%20%ED%8A%B8%EC%B9%9C%EC%86%8C%20%EC%8B%9C%ED%8A%B8.html"; // 홈 페이지의 URL을 여기에 입력하세요
+            }
+            
+            // Home 버튼을 클릭 이벤트에 함수를 연결합니다.
+            var homeButton = document.getElementById("homeButton");
+            homeButton.addEventListener("click", goToHome);
+          </script>
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.43876 5V3H0.459167V2H2.43876V0H3.42856V2H5.40815V3H3.42856V5H2.43876ZM2.43878 17V8H3.42857V16H15.3061V3H8.37755V2H16.2959V17H2.43878Z" fill="#DAD1BF"/>
             <path d="M6.4386 5.98993L9.36735 3.64095L12.2961 5.98993V11.0101L9.36735 13.359L6.4386 11.0101V5.98993Z" stroke="#DAD1BF"/>
