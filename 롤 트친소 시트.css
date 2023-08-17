@@ -23,11 +23,18 @@ a {
 }
 
 .highlighted { /* 형광펜 색상 */
-  background-color: rgba(205, 190, 145, 0.50); /* 기본 색상 */
+  background-color: rgba(255, 0, 0, 0.5); /* 기본 색상 */
 }
 
 .hidden {
   display: none;
+}
+
+#colorInput {
+  position: absolute;
+
+  top: 400px;
+  left: 24px;
 }
 
 #container {

@@ -20,26 +20,6 @@ function changeDiscord() {
   }
 }
 
-/* 글씨 누르면 형광펜 */
-
-const colorPickerBtn = document.getElementById('colorPickerBtn');
-    const colorPalette = document.getElementById('colorPalette');
-    const colorInput = document.getElementById('colorInput');
-
-    function highlightText(element) {
-      element.classList.toggle("highlighted");
-    }
-
-    colorPickerBtn.addEventListener('click', () => {
-      colorPalette.classList.toggle('hidden');
-    });
-
-    colorInput.addEventListener('input', () => {
-      const selectedColor = colorInput.value;
-      document.styleSheets[0].addRule('.highlighted', `background-color: ${selectedColor} !important`);
-    });
-
-
 /* 프로필 사진 바꾸기 */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -147,3 +127,15 @@ function showImage() {
   var teamImageId = selectedTeam + "Image";
   document.getElementById(teamImageId).style.display = "block";
 }
+
+// 저장 //
+// 'PNG로 저장' 버튼 클릭 시 실행되는 함수
+document.getElementById("save-button").addEventListener("click", function () {
+  // container 요소를 캡처하여 canvas 생성
+  html2canvas(document.getElementById("container")).then(function (canvas) {
+    // canvas를 Blob 객체로 변환하여 저장
+    canvas.toBlob(function (blob) {
+      saveAs(blob, "saved_image.png"); // 파일 다운로드
+    });
+  });
+});
