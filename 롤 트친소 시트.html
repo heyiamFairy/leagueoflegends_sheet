@@ -118,9 +118,9 @@
             <div></div> <!-- 검색 창 -->
             <img src="PNG/icon_search.png" alt="검색 아이콘">
             <p><a href="https://twitter.com/Hey_I_am_Fairy">@Hey_I_am_Fairy</a></p>
-            <input type="file" id="setting">
+            <input type="file" id="setting" style="display:none;">
             <label for="setting">
-              <img src="PNG/icon_settings.png" alt="설정">
+              <img id="settings" src="PNG/icon_settings.png" alt="설정">
             </label>
              <img onclick="changeDiscord()" class="discord" id="button_off" src="PNG/button_off.png" alt="디스코드 OFF">
              <img onclick="changeDiscord()" class="discord" id="button_on" src="PNG/button_on.png" style="display:none;" alt="디스코드 ON">
@@ -223,7 +223,7 @@
                 <img id="silverImage" src="tear/silver.png" alt="실버">
                 <img id="goldImage" src="tear/gold.png" alt="골드">
                 <img id="platinumImage" src="tear/platinum.png" alt="플레티넘">
-                <img id="emeraldImage" src="tear/emerald.png" alt="에메랄드">
+                <img id="emeraldImage" src="tear/emerald.png" alt="사진을 준비중입니다.">
                 <img id="diamondImage" src="tear/diamond.png" alt="다이아몬드">
                 <img id="masterImage" src="tear/master.png" alt="마스터">
                 <img id="grandmasterImage" src="tear/grandmaster.png" alt="그랜드마스터">
@@ -250,6 +250,8 @@
             </section>
             <section id="most_box">
               <label>MOST 1</label>
+              <img id="border_campion" src="PNG/border_campion.png" alt="챔피언">
+              <img id="highlight" src="PNG/highlight.png" alt="하이라이트">
               <input type="text" id="most" placeholder="739K">
               <select id="champion" onchange="showImage()">
                 <option value="Garen">가렌</option>
@@ -577,8 +579,7 @@
                 <img id="HeimerdingerImage" src="champion/Heimerdinger.png" alt="하이머딩거">
                 <img id="HecarimImage" src="champion/Hecarim.png" alt="헤카림">
               </div>
-              <img id="border_campion" src="PNG/border_campion.png" alt="챔피언">
-              <img id="highlight" src="PNG/highlight.png" alt="하이라이트">
+
             </section>
             <section id="team_box">
               <label for="team">프로 팀</label>

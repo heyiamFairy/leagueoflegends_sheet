@@ -405,15 +405,18 @@ header label {
   right: 70px;
 }
 
-header img:nth-of-type(3) {
+#settings {
   width: 28px;
   height: 28px;
+}
 
-  cursor: pointer;
+header img:nth-of-type(3) {
+  width: 25px;
+  height: 14px;
 
   position: absolute;
-  top: 14px;
-  right: 35px;
+  top: 58px;
+  right: 73px;
 }
 
 header img:nth-of-type(4) {
@@ -426,15 +429,6 @@ header img:nth-of-type(4) {
 }
 
 header img:nth-of-type(5) {
-  width: 25px;
-  height: 14px;
-
-  position: absolute;
-  top: 58px;
-  right: 73px;
-}
-
-header img:nth-of-type(6) {
   width: 28px;
   height: 28px;
 
@@ -747,7 +741,7 @@ footer {
   cursor: pointer;
 }
 
-#rank_box img {
+#rank_box #questionmark {
   width: 18px;
   height: 18px;
 
@@ -757,14 +751,44 @@ footer {
 }
 
 #rank_image img{
+  display: none;
+
+  position: absolute;
+  left: 306px;
+  bottom: 41px;
+}
+
+#rank_image img:nth-of-type(1){
+  width: 124px;
+  height: 124px;
+
+  display: none;
+
+  position: absolute;
+  left: 309px;
+  bottom: 33px;
+}
+
+#rank_image img{
   width: 130px;
   height: 130px;
 
   display: none;
 
   position: absolute;
-  left: 306px;
+  left: 305px;
   bottom: 41px;
+}
+
+#rank_image img:nth-last-of-type(12){
+  width: 195px;
+  height: 195px;
+
+  display: none;
+
+  position: absolute;
+  left: 273px;
+  bottom: 9px;
 }
 
 #position_box label {
