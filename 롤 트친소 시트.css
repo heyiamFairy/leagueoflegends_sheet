@@ -52,7 +52,10 @@ a {
   top: 140px;
 }
 
-#back svg {
+#back img {
+  width: 1054px;
+  height: 635px;
+
   position: absolute;
   top: 0px; 
   left: 0px;
@@ -68,40 +71,13 @@ aside {
   bottom: 0px;
 }
 
-aside svg:nth-of-type(1) {
-  width: 196px;
-  height: 512px;
+aside img:nth-of-type(1) {
+  width: 198px;
+  height: 513px;
   
   position: absolute;
-  top: -15.5px;
+  top: 0px;
   left: 0px;
-
-  fill: #0A0E12;
-  stroke-width: 1px;
-  stroke: #1E1E26;
-}
-
-aside svg:nth-of-type(2) {
-  width: 196px;
-  height: 512px;
-
-  position: absolute;
-  top: -1px;
-  left: 0px;
-
-  fill: radial-gradient(45.51% 111.79% at 50.26% 40.82%, #212A30 0%, #0A0E12 100%);
-}
-
-aside svg:nth-of-type(3) {
-  width: 196px;
-  height: 512px;
-
-  position: absolute;
-  top: -5px;
-  left: 0;
-
-  fill: linear-gradient(180deg, #232C33 68.75%, rgba(35, 44, 51, 0.00) 100%);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 aside h1 {
@@ -196,7 +172,10 @@ aside #find3 {
   left: 85px;
 }
 
-aside svg:nth-of-type(4) {
+aside img:nth-of-type(2) {
+  width: 82px;
+  height: 82px;
+
   position: absolute;
   top: 161px;
   left: 57px;
@@ -254,7 +233,10 @@ aside #changingGender {
   left: 107px;
 }
 
-aside svg:nth-of-type(5) {
+aside img:nth-of-type(3) {
+  width: 46px;
+  height: 46px;
+
   cursor: pointer;
 
   position: absolute;
@@ -262,15 +244,21 @@ aside svg:nth-of-type(5) {
   left: 26px;
 }
 
-aside svg:nth-of-type(6) {
+aside img:nth-of-type(4) {
+  width: 46px;
+  height: 46px;
+
   cursor: pointer;
 
   position: absolute;
   top: 348px;
-  left: 76px;
+  left: 78px;
 }
 
-aside svg:nth-of-type(7) {
+aside img:nth-of-type(5) {
+  width: 46px;
+  height: 46px;
+  
   cursor: pointer;
 
   position: absolute;
@@ -278,22 +266,13 @@ aside svg:nth-of-type(7) {
   left: 126px;
 }
 
-aside svg:nth-of-type(8) {
-  position: absolute;
-  left: 53.46px;
-  bottom: 68px;
-}
+aside img:nth-of-type(6) {
+  width: 15.837px;
+  height: 17px;
 
-aside svg:nth-of-type(9) {
   position: absolute;
-  left: 89.11px;
-  bottom: 71px; 
-}
-
-aside svg:nth-of-type(10) {
-  position: absolute;
-  left: 126.71px;
-  bottom: 67.52px;
+  left: 52.46px;
+  bottom: 67px;
 }
 
 #number0 {
@@ -303,6 +282,24 @@ aside svg:nth-of-type(10) {
   position: absolute;
   left: 58.45px;
   bottom: 38px;
+}
+
+aside img:nth-of-type(7) {
+  width: 17.803px;
+  height: 14.242px;
+
+  position: absolute;
+  left: 88.11px;
+  bottom: 70px; 
+}
+
+aside img:nth-of-type(8) {
+  width: 14.847px;
+  height: 18.197px;
+
+  position: absolute;
+  left: 125.71px;
+  bottom: 66.52px;
 }
 
 #number2 {
@@ -358,7 +355,10 @@ header li:nth-of-type(6) {
   left: 408px;
 }
 
-header svg:nth-of-type(1) {
+header img:nth-of-type(1) {
+  width: 53px;
+  height: 1px;
+
   position: absolute;
   top: 26px;
   left: 35px;
@@ -376,12 +376,12 @@ header div {
   background: rgba(0, 0, 0, 0.80);
 }
 
-header svg:nth-of-type(2) {
+header img:nth-of-type(2) {
   width: 9.707px;
   height: 10px;
 
   position: absolute;
-  top: 23px;
+  top: 24px;
   right: 252.29px;
 }
 
@@ -390,7 +390,7 @@ header p {
   font-size: 13px;
 
   position: absolute;
-  top: 7px;
+  top: 8px;
   right: 145px;
 }
 
@@ -405,6 +405,44 @@ header label {
   right: 70px;
 }
 
+header img:nth-of-type(3) {
+  width: 28px;
+  height: 28px;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 14px;
+  right: 35px;
+}
+
+header img:nth-of-type(4) {
+  width: 25px;
+  height: 14px;
+
+  position: absolute;
+  top: 58px;
+  right: 73px;
+}
+
+header img:nth-of-type(5) {
+  width: 25px;
+  height: 14px;
+
+  position: absolute;
+  top: 58px;
+  right: 73px;
+}
+
+header img:nth-of-type(6) {
+  width: 28px;
+  height: 28px;
+
+  position: absolute;
+  top: 51px;
+  right: 35px;
+}
+
 header .discord { 
   cursor: pointer;
 
@@ -413,26 +451,14 @@ header .discord {
   right: 73px;
 }
 
-header img {
-  width: 28px;
-  height: 28px;
-
-  position: absolute;
-  top: 50px;
-  right: 35px;
-}
-
 main {
   height: 319px;
 }
 
-svg:nth-of-type(1) {
-  position: absolute;
-  top: 107px;
-  right: 9px;
-}
+#main {
+  width: 780px;
+  height: 295px;
 
-svg:nth-of-type(2) {
   position: absolute;
   top: 109px;
   right: 10.91px;
@@ -721,13 +747,16 @@ footer {
   cursor: pointer;
 }
 
-#rank_box svg {
+#rank_box img {
+  width: 18px;
+  height: 18px;
+
   position: absolute;
   top: 449px;
   left: 362px;
 }
 
-#rank_box img {
+#rank_image img{
   width: 130px;
   height: 130px;
 
@@ -737,11 +766,6 @@ footer {
   left: 306px;
   bottom: 41px;
 }
-
-#rank_box img:nth-of-type(1) {
-  bottom: 35px;
-}
-
 
 #position_box label {
   font-family: Pretendard;
@@ -816,31 +840,31 @@ footer {
   cursor: pointer;
 }
 
-#most_box svg:nth-of-type(1) {
-  position: absolute;
-  top: 408px;
-  right: 324px;
-}
-
-#most_box svg:nth-of-type(2) {
-  position: absolute;
-  top: 529.47px;
-  left: 631px;
-}
-
-#most_box svg:nth-of-type(3) {
-  position: absolute;
-  top: 479px;
-  left: 626px;
-}
-
-#most_box img {
+#champion_image img {
   width: 46px;
   height: 40.969px;
 
   position: absolute;
   left: 636px;
   bottom: 56.81px;
+}
+
+#border_campion {
+  width: 66px;
+  height: 100.188px;
+
+  position: absolute;
+  left: 625px;
+  bottom: 55.81px;
+}
+
+#highlight {
+  width: 143px;
+  height: 244px;
+
+  position: absolute;
+  left: 587px;
+  bottom: 0px;
 }
 
 #champion {

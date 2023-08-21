@@ -1,22 +1,15 @@
 /* 디스코드 활성화 비활성화 */
 
-var discordIndex = 1;
-
 function changeDiscord() {
-  var discordSvg = document.querySelector(".discord");
+  var button_off = document.getElementById('button_off');
+  var button_on = document.getElementById('button_on');
 
-  if (discordIndex === 1) {
-    discordSvg.innerHTML = `
-      <rect x="0.5" y="0.5" width="24" height="13" rx="6.5" fill="#CDBE91" fill-opacity="0.8" stroke="#785A28"/>
-      <rect x="13.5" y="2.5" width="9" height="9" rx="4.5" fill="#CDBE91" stroke="#785A28"/>
-    `;
-    discordIndex = 2;
+  if (button_off.style.display === 'none') {
+    button_off.style.display = 'block';
+    button_on.style.display = 'none';
   } else {
-    discordSvg.innerHTML = `
-      <rect x="0.5" y="0.5" width="24" height="13" rx="6.5" fill="#0A0E12" fill-opacity="0.8" stroke="#785A28"/>
-      <rect x="2.5" y="2.5" width="9" height="9" rx="4.5" fill="#0A0E12" stroke="#785A28"/>
-    `;
-    discordIndex = 1;
+    button_off.style.display = 'none';
+    button_on.style.display = 'block';
   }
 }
 
@@ -50,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('container');
   const setting = document.getElementById('setting');
-  let isImage = false;
 
   setting.addEventListener('change', (event) => {
     const selectedFile = event.target.files[0];
@@ -58,9 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedFile) {
       const imageURL = URL.createObjectURL(selectedFile);
       container.style.backgroundImage = `url(${imageURL})`;
-      container.style.backgroundSize = "cover";
-      container.style.backgroundPosition = "center";
-      isImage = true;
     }
   });
 });
